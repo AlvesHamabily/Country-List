@@ -1,0 +1,56 @@
+/* CSS Variaveis */
+:root {
+    --color-background: #2E4546;
+    --color-secundary:#386F70;
+    --color-text: #00EDF0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: var(--color-text);
+  }
+  
+  /* Usando css variaveis */
+  body {
+    background-color: var(--color-background);
+  }
+  
+  .header {
+    background-color: var(--color-secundary);
+    padding: 16px;
+  }
+  
+  .header h1 {
+    text-align: center;
+  }
+  
+  /*Estilizando a lista de paises*/
+  .list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+    max-width: 780px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  
+  .item-container {
+    background: var(--color-secundary);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .item-name {
+    text-align: center;
+  }
