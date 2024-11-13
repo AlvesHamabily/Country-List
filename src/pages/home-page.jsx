@@ -8,8 +8,9 @@ export function HomePage(){
     const [list, setList] = useState([]);
 
     async function fetchCountries(){
+        const newLocal = "https://restcountries.com/v3.1/all?fields=name,flags";
         const req = await fetch(
-            "https://restcountries.com/v3.all?fields=name,flags"
+            newLocal
         );
 
         const data = await req.json();
@@ -32,7 +33,7 @@ return (
                     name={item.name.common}
                     />
                 )
-            })}
+            })};
         </ul>
     </main>
-)}
+    )};
